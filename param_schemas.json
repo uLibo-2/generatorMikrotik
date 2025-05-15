@@ -1,0 +1,14 @@
+{
+  "base_config": {
+    "description": "Базовая настройка MikroTik",
+    "parameters": [
+      {"name": "hostname", "question": "Введите hostname для маршрутизатора", "default": "MikroTik"},
+      {"name": "admin_username", "question": "Введите имя администратора", "default": "admin"},
+      {"name": "admin_password", "question": "Введите пароль администратора", "default": "password123"},
+      {"name": "lan_interface", "question": "Введите имя LAN интерфейса", "default": "ether2"},
+      {"name": "lan_ip", "question": "Введите IP-адрес LAN (например, 192.168.88.1/24)", "default": "192.168.88.1/24"},
+      {"name": "dns_servers", "question": "Введите DNS-серверы через запятую", "default": "8.8.8.8,8.8.4.4"},
+      {"name": "ntp_servers", "question": "Введите NTP-серверы через запятую", "default": "pool.ntp.org"}
+    ]
+  }
+}

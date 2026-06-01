@@ -1,0 +1,55 @@
+alternatives:
+- hAP ax2
+best_use_cases:
+- Budget SOHO
+- Access Point
+capabilities:
+  bgp: basic
+  capsman: basic
+  containers: none
+  ospf: basic
+  wireguard: basic
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 1000
+  containers_supported: false
+  evpn_supported: false
+  mpls_supported: true
+  ospf_area_limit: 2
+  vxlan_supported: false
+  wireguard_recommended_tunnels: 20
+hardware:
+  cores: 4
+  cpu: IPQ-4019
+  frequency: 716
+  ram_mb: 128
+  switch_chip: IPQ-4019
+known_issues:
+- Extremely low RAM (128MB)
+- Frequent out-of-memory when upgrading v7 firmware
+name: MikroTik hAP ac2 (RBD52G-5HacD2HnD-TC)
+ports:
+  ethernet: 5
+  sfp: 0
+  sfp_plus: 0
+  two_5g: 0
+recommended_clients:
+  home: 30
+  hotspot: 20
+  office: 20
+recommended_versions:
+  lts: 6.49.10
+  stable: 7.12.1
+replacements:
+- hAP ac
+throughput:
+  firewall_gbps: 0.8
+  ipsec_gbps: 0.3
+  routing_gbps: 1.9
+  wireguard_mbps: 150
+wifi:
+  2g: true
+  5g: true
+  supported: true
+  wifi6: false
+  wifi7: false

@@ -1,0 +1,54 @@
+alternatives:
+- hAP ax3
+best_use_cases:
+- Home
+- Remote Worker
+capabilities:
+  bgp: basic
+  capsman: excellent
+  containers: basic
+  ospf: good
+  wireguard: good
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 5000
+  containers_supported: true
+  evpn_supported: false
+  mpls_supported: true
+  ospf_area_limit: 5
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 50
+hardware:
+  cores: 4
+  cpu: IPQ-6010
+  frequency: 864
+  ram_mb: 1024
+  switch_chip: IPQ-6010
+known_issues:
+- Lower wireless range compared to hAP ax3
+name: MikroTik hAP ax2 (C52UiG+5HPaxD2HPaxD)
+ports:
+  ethernet: 5
+  sfp: 0
+  sfp_plus: 0
+  two_5g: 0
+recommended_clients:
+  home: 50
+  hotspot: 30
+  office: 30
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- hAP ac2
+throughput:
+  firewall_gbps: 1.2
+  ipsec_gbps: 0.4
+  routing_gbps: 2.5
+  wireguard_mbps: 400
+wifi:
+  2g: true
+  5g: true
+  supported: true
+  wifi6: true
+  wifi7: false

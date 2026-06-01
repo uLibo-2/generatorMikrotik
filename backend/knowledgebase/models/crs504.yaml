@@ -1,0 +1,54 @@
+alternatives:
+- None
+best_use_cases:
+- 100G distribution switch
+capabilities:
+  bgp: none
+  capsman: none
+  containers: none
+  ospf: none
+  wireguard: none
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 10
+  containers_supported: false
+  evpn_supported: false
+  mpls_supported: false
+  ospf_area_limit: 0
+  vxlan_supported: false
+  wireguard_recommended_tunnels: 0
+hardware:
+  cores: 1
+  cpu: 98DX224S
+  frequency: 650
+  ram_mb: 64
+  switch_chip: 98DX224S
+known_issues:
+- Requires v7.x to manage 100G interfaces properly
+- RAM is tiny
+name: MikroTik CRS504-4XS-OUT
+ports:
+  ethernet: 1
+  sfp: 0
+  sfp_plus: 0
+  two_5g: 0
+recommended_clients:
+  home: 0
+  hotspot: 0
+  office: 0
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- None
+throughput:
+  firewall_gbps: 0.05
+  ipsec_gbps: 0.0
+  routing_gbps: 0.1
+  wireguard_mbps: 0
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false

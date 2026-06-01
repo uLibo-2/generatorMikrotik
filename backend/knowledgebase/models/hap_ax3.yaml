@@ -1,0 +1,58 @@
+alternatives:
+- hAP ax2
+- L009
+best_use_cases:
+- Home
+- Small Office
+- CAPsMAN Controller
+capabilities:
+  bgp: good
+  capsman: excellent
+  containers: good
+  ospf: good
+  wireguard: excellent
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 10000
+  containers_supported: true
+  evpn_supported: false
+  mpls_supported: true
+  ospf_area_limit: 10
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 100
+hardware:
+  cores: 4
+  cpu: IPQ-6010
+  frequency: 1800
+  ram_mb: 1024
+  switch_chip: IPQ-6010
+known_issues:
+- Thermal throttling under extreme 2.5G loads
+- CAPsMAN FT roaming issue on early v7.12
+name: MikroTik hAP ax3 (C53UiG+5HPaxD2HPaxD)
+ports:
+  ethernet: 4
+  sfp: 0
+  sfp_plus: 0
+  two_5g: 1
+recommended_clients:
+  home: 80
+  hotspot: 50
+  office: 50
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- hAP ac3
+- hAP ac2
+throughput:
+  firewall_gbps: 4.2
+  ipsec_gbps: 0.9
+  routing_gbps: 9.8
+  wireguard_mbps: 800
+wifi:
+  2g: true
+  5g: true
+  supported: true
+  wifi6: true
+  wifi7: false

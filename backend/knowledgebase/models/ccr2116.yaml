@@ -1,0 +1,55 @@
+alternatives:
+- CCR2216
+best_use_cases:
+- Large Enterprise Core Router
+- ISP Border Router (BGP Full Table)
+capabilities:
+  bgp: excellent
+  capsman: good
+  containers: excellent
+  ospf: excellent
+  wireguard: excellent
+features:
+  bgp_full_table: true
+  bgp_recommended_routes: 4000000
+  containers_supported: true
+  evpn_supported: true
+  mpls_supported: true
+  ospf_area_limit: 500
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 5000
+hardware:
+  cores: 16
+  cpu: AL73400
+  frequency: 2000
+  ram_mb: 16384
+  switch_chip: None
+known_issues:
+- High power consumption
+- Needs active cooling at all times
+name: MikroTik CCR2116-12G-4S+
+ports:
+  ethernet: 12
+  sfp: 0
+  sfp_plus: 4
+  two_5g: 0
+recommended_clients:
+  home: 5000
+  hotspot: 2000
+  office: 2000
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- CCR1036
+throughput:
+  firewall_gbps: 35.0
+  ipsec_gbps: 10.0
+  routing_gbps: 80.0
+  wireguard_mbps: 8000
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false

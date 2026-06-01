@@ -1,0 +1,24 @@
+routeros:
+  bridge:
+    vlan-filtering:
+      description: "Включає апаратну VLAN фільтрацію на мосту"
+      risks:
+        - "Втрата доступу до пристрою при помилках налаштування"
+      requirements:
+        - "наявність записів у таблиці /interface bridge vlan"
+      best_practice:
+        - "ingress-filtering=yes"
+        - "frame-types=admit-only-vlan-tagged для транків"
+  firewall:
+    fasttrack:
+      description: "FastTrack прискорює обробку пакетів в обхід черг та фільтрів"
+      incompatible:
+        - "queue-tree"
+        - "ipsec"
+        - "traffic-flow"
+      risks:
+        - "Ігнорування черг Simple Queues та Queue Tree для прискореного трафіку"
+        - "Проблеми в роботі або втрата пакетів в тунелях IPsec"
+        - "Часткова втрата статистики NetFlow / Traffic Flow"
+      best_practice:
+        - "Вимкнути FastTrack за наявності QoS черг чи VPN тунелів"

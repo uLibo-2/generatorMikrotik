@@ -1,0 +1,16 @@
+best_practice: Використовуйте FastTrack на домашніх та офісних роутерах для отримання
+  гігабітних швидкостей. Вимикайте його, якщо потребуєте детального нарізання швидкості
+  (QoS), шейпінгу або VPN тунелів.
+caveats: FastTrack несумісний з чергами Simple Queues та Queue Tree (пакети пролітають
+  повз них), IPsec шифруванням, а також деякими правилами mangle.
+examples: '/ip firewall filter
+
+  add chain=forward action=fasttrack-connection connection-state=established,related
+  comment="FastTrack"
+
+  add chain=forward action=accept connection-state=established,related comment="Accept
+  Established"'
+explanation: FastTrack дозволяє обробляти пакети для встановлених (established) та
+  пов'язаних (related) з'єднань в обхід черг QoS, брандмауера mangle та IPsec політик.
+  Це суттєво зменшує навантаження на CPU роутера.
+name: FastTrack Connection (Прискорення FastTrack)

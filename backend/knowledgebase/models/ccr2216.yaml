@@ -1,0 +1,54 @@
+alternatives:
+- CCR2116
+best_use_cases:
+- Data Center Core Router
+- Carrier-Grade NAT Gateway
+capabilities:
+  bgp: excellent
+  capsman: basic
+  containers: excellent
+  ospf: excellent
+  wireguard: excellent
+features:
+  bgp_full_table: true
+  bgp_recommended_routes: 4000000
+  containers_supported: true
+  evpn_supported: true
+  mpls_supported: true
+  ospf_area_limit: 500
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 5000
+hardware:
+  cores: 16
+  cpu: AL73400
+  frequency: 2000
+  ram_mb: 16384
+  switch_chip: 98DX8525
+known_issues:
+- 25G/100G interfaces require high-quality transceivers for stability
+name: MikroTik CCR2216-1G-12XS-2Q+
+ports:
+  ethernet: 1
+  sfp: 0
+  sfp_plus: 12
+  two_5g: 0
+recommended_clients:
+  home: 10000
+  hotspot: 5000
+  office: 5000
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- CCR1072
+throughput:
+  firewall_gbps: 80.0
+  ipsec_gbps: 15.0
+  routing_gbps: 195.0
+  wireguard_mbps: 10000
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false

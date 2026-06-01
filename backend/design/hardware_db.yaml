@@ -1,0 +1,54 @@
+# MikroTik Hardware Capability Database
+RB5009:
+  model: "RB5009UPr+S+"
+  ethernet_ports: 8
+  sfp_plus: 1
+  wifi: false
+  capsman_controller: true
+  cpu_cores: 4
+  ram_mb: 1024
+
+hAP_ax3:
+  model: "hAP ax3"
+  ethernet_ports: 5
+  sfp_plus: 0
+  wifi: true
+  capsman_controller: true
+  cpu_cores: 4
+  ram_mb: 1024
+
+hAP_ac2:
+  model: "hAP ac2"
+  ethernet_ports: 5
+  sfp_plus: 0
+  wifi: true
+  capsman_controller: false
+  cpu_cores: 4
+  ram_mb: 128
+
+hEX:
+  model: "hEX"
+  ethernet_ports: 5
+  sfp_plus: 0
+  wifi: false
+  capsman_controller: false
+  cpu_cores: 2
+  ram_mb: 256
+
+hAP_lite:
+  model: "hAP lite"
+  ethernet_ports: 4
+  sfp_plus: 0
+  wifi: true
+  capsman_controller: false
+  cpu_cores: 1
+  ram_mb: 32
+
+RB4011:
+  model: "RB4011iGS+RM"
+  ethernet_ports: 10
+  sfp_plus: 1
+  wifi: false
+  capsman_controller: true
+  cpu_cores: 4
+  ram_mb: 1024

@@ -1,0 +1,55 @@
+alternatives:
+- CCR2116
+best_use_cases:
+- Enterprise Core Router
+- Internet Gateway
+- Medium ISP
+capabilities:
+  bgp: excellent
+  capsman: good
+  containers: excellent
+  ospf: excellent
+  wireguard: excellent
+features:
+  bgp_full_table: true
+  bgp_recommended_routes: 1000000
+  containers_supported: true
+  evpn_supported: true
+  mpls_supported: true
+  ospf_area_limit: 200
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 1000
+hardware:
+  cores: 4
+  cpu: AL32400
+  frequency: 1700
+  ram_mb: 4096
+  switch_chip: 88E6191X
+known_issues:
+- Throughput drops on ports 13-16 if switch-chip buffer is saturated
+name: MikroTik CCR2004-16G-2S+
+ports:
+  ethernet: 16
+  sfp: 0
+  sfp_plus: 2
+  two_5g: 0
+recommended_clients:
+  home: 1000
+  hotspot: 500
+  office: 600
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- CCR1009
+throughput:
+  firewall_gbps: 18.0
+  ipsec_gbps: 3.5
+  routing_gbps: 40.0
+  wireguard_mbps: 4000
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false

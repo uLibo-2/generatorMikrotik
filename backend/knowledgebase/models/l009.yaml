@@ -1,0 +1,55 @@
+alternatives:
+- hAP ax3
+- RB5009
+best_use_cases:
+- SOHO Core Router
+- Compact rackmount setup
+capabilities:
+  bgp: basic
+  capsman: good
+  containers: basic
+  ospf: good
+  wireguard: good
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 5000
+  containers_supported: true
+  evpn_supported: false
+  mpls_supported: true
+  ospf_area_limit: 10
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 100
+hardware:
+  cores: 2
+  cpu: IPQ-5018
+  frequency: 800
+  ram_mb: 512
+  switch_chip: 88E6190
+known_issues:
+- CPU bottleneck on 10G SFP+ interface
+name: MikroTik L009UiGS-RM
+ports:
+  ethernet: 8
+  sfp: 0
+  sfp_plus: 1
+  two_5g: 0
+recommended_clients:
+  home: 100
+  hotspot: 50
+  office: 50
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- RB2011
+throughput:
+  firewall_gbps: 1.2
+  ipsec_gbps: 0.5
+  routing_gbps: 2.5
+  wireguard_mbps: 300
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false

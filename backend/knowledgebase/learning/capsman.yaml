@@ -1,0 +1,17 @@
+best_practice: Для стабільного роумінгу увімкніть FT (Fast Transition) та використовуйте
+  Access List правила для відсікання клієнтів з рівнем сигналу гірше -80 dBm.
+caveats: Починаючи з RouterOS v7.13, MikroTik розділив CAPsMAN на класичний (wireless)
+  та новий (wifi). Новий контролер підтримує стандарти Wi-Fi 6 (ax) та 7 (be) та вимагає
+  пакету wifi-qcom або wifi-qcom-ac.
+examples: '/interface wifi capsman
+
+  set enabled=yes interfaces=bridge
+
+  /interface wifi provisioning
+
+  add action=create-dynamic-enabled master-configuration=WiFi-Staff supported-bands=5ghz-ax,2ghz-ax'
+explanation: CAPsMAN (Controlled Access Point system Manager) дозволяє централізовано
+  керувати мережею бездротових точок доступу MikroTik. Всі налаштування SSID, безпеки,
+  каналів та роумінгу виконуються на одному пристрої (контролері), який автоматично
+  конфігурує підлеглі точки (CAPs).
+name: CAPsMAN Wireless Controller (Контролер CAPsMAN)

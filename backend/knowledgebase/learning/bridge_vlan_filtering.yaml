@@ -1,0 +1,25 @@
+best_practice: Завжди налаштовуйте VLAN через єдиний міст (bridge) з активованим vlan-filtering=yes
+  на CRS комутаторах та ax-роутерах. Уникайте створення декількох мостів.
+caveats: На старіших пристроях (наприклад, RB4011, RB2011) активація vlan-filtering
+  призводить до обробки трафіку процесором, що обмежує швидкість до 1 Gbps та перевантажує
+  CPU.
+examples: '/interface bridge
+
+  add name=bridge vlan-filtering=yes
+
+  /interface bridge port
+
+  add bridge=bridge interface=ether1 pvid=10
+
+  add bridge=bridge interface=ether2 pvid=20
+
+  /interface bridge vlan
+
+  add bridge=bridge tagged=bridge,ether3 untagged=ether1 vlan-ids=10
+
+  add bridge=bridge tagged=bridge,ether3 untagged=ether2 vlan-ids=20'
+explanation: Bridge VLAN Filtering дозволяє налаштовувати VLAN тегування безпосередньо
+  на інтерфейсі Bridge. На сучасних пристроях це активує апаратне прискорення (L2
+  Hardware Offloading) на вбудованих світч-чипах, забезпечуючи високу пропускну здатність
+  без завантаження центрального процесора.
+name: Bridge VLAN Filtering (Апаратна фільтрація VLAN)

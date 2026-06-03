@@ -1,0 +1,55 @@
+alternatives:
+- hAP ac2
+best_use_cases:
+- Budget Home
+- IoT Gateway
+capabilities:
+  bgp: basic
+  capsman: basic
+  containers: none
+  ospf: basic
+  wireguard: basic
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 1000
+  containers_supported: false
+  evpn_supported: false
+  mpls_supported: true
+  ospf_area_limit: 2
+  vxlan_supported: false
+  wireguard_recommended_tunnels: 10
+hardware:
+  cores: 2
+  cpu: IPQ-5010
+  frequency: 800
+  ram_mb: 256
+  switch_chip: IPQ-5010
+known_issues:
+- Limited RAM makes containers unsupported
+- No 5GHz wifi band
+name: MikroTik hAP ax lite (L41G-2axD)
+ports:
+  ethernet: 4
+  sfp: 0
+  sfp_plus: 0
+  two_5g: 0
+recommended_clients:
+  home: 20
+  hotspot: 10
+  office: 10
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- hAP lite
+throughput:
+  firewall_gbps: 0.4
+  ipsec_gbps: 0.1
+  routing_gbps: 0.9
+  wireguard_mbps: 100
+wifi:
+  2g: true
+  5g: false
+  supported: true
+  wifi6: true
+  wifi7: false

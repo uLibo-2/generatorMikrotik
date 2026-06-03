@@ -1,0 +1,139 @@
+RB5009:
+  name: "MikroTik RB5009UG+S+IN"
+  cpu:
+    model: "AL32400"
+    cores: 4
+    frequency: 1400
+  ram:
+    size_mb: 1024
+  ports:
+    ethernet: 7
+    two_5g: 1
+    sfp_plus: 1
+  performance:
+    routing_gbps: 20.0
+    firewall_gbps: 8.0
+    ipsec_gbps: 2.0
+  wifi:
+    supported: false
+  recommended_clients:
+    office: 300
+    hotspot: 200
+  capabilities:
+    pcc: "excellent"
+    bgp: "excellent"
+    ospf: "excellent"
+    capsman: "excellent"
+    zerotier: "excellent"
+    container: true
+    docker: true
+    wireguard_throughput: 2500
+  wiki:
+    brief: "Ідеальний маршрутизатор для середніх офісів, CAPsMAN, PCC балансування та VPN шлюзів."
+    not_recommended: "Не рекомендується для великого CGNAT провайдерського класу та 1000+ користувачів."
+    details: "Високопродуктивний пристрій з підтримкою контейнерів. Повноцінний апаратний оффлоад для Bridge VLAN та IPsec."
+
+hAP_ax3:
+  name: "MikroTik hAP ax3 (C53UiG+5HPaxD2HPaxD)"
+  cpu:
+    model: "IPQ-6010"
+    cores: 4
+    frequency: 1800
+  ram:
+    size_mb: 1024
+  ports:
+    ethernet: 4
+    two_5g: 1
+    sfp_plus: 0
+  performance:
+    routing_gbps: 9.8
+    firewall_gbps: 4.2
+    ipsec_gbps: 0.9
+  wifi:
+    supported: true
+  recommended_clients:
+    office: 80
+    hotspot: 50
+  capabilities:
+    pcc: "good"
+    bgp: "good"
+    ospf: "good"
+    capsman: "excellent"
+    zerotier: "good"
+    container: true
+    docker: true
+    wireguard_throughput: 800
+  wiki:
+    brief: "Потужна Wi-Fi 6 точка доступу та роутер для дому та невеликих офісів."
+    not_recommended: "Не рекомендується для великої кількості дротових клієнтів без додаткових комутаторів."
+    details: "Чудова продуктивність бездротового зв'язку стандарту AX. Має потужний процесор IPQ-6010."
+
+hAP_ac2:
+  name: "MikroTik hAP ac2 (RBD52G-5HacD2HnD-TC)"
+  cpu:
+    model: "IPQ-4019"
+    cores: 4
+    frequency: 716
+  ram:
+    size_mb: 128
+  ports:
+    ethernet: 5
+    two_5g: 0
+    sfp_plus: 0
+  performance:
+    routing_gbps: 1.9
+    firewall_gbps: 0.8
+    ipsec_gbps: 0.3
+  wifi:
+    supported: true
+  recommended_clients:
+    office: 30
+    hotspot: 20
+  capabilities:
+    pcc: "basic"
+    bgp: "basic"
+    ospf: "basic"
+    capsman: "basic"
+    zerotier: "none"
+    container: false
+    docker: false
+    wireguard_throughput: 150
+  wiki:
+    brief: "Бюджетний роутер для домашніх мереж та віддалених робочих місць."
+    not_recommended: "Не рекомендується для Docker контейнерів, ZeroTier або великих таблиць BGP."
+    details: "Обмежений розмір оперативної пам'яті (128 МБ) не дозволяє запускати ресурсомісткі RouterOS додатки."
+
+cAP_ax:
+  name: "MikroTik cAP ax (CAPGi-5HaxD2HPaxD)"
+  cpu:
+    model: "IPQ-6010"
+    cores: 4
+    frequency: 1800
+  ram:
+    size_mb: 1024
+  ports:
+    ethernet: 2
+    two_5g: 0
+    sfp_plus: 0
+  performance:
+    routing_gbps: 9.8
+    firewall_gbps: 4.2
+    ipsec_gbps: 0.9
+  wifi:
+    supported: true
+  recommended_clients:
+    office: 120
+    hotspot: 100
+  capabilities:
+    pcc: "basic"
+    bgp: "basic"
+    ospf: "basic"
+    capsman: "excellent"
+    zerotier: "good"
+    container: true
+    docker: true
+    wireguard_throughput: 800
+  wiki:
+    brief: "Стельова бездротова точка доступу Enterprise рівня з підтримкою Wi-Fi 6."
+    not_recommended: "Не рекомендується використовувати як основний маршрутизатор через малу кількість портів."
+    details: "Ідеально підходить для розгортання безшовних Wi-Fi мереж під керуванням центрального CAPsMAN контролера."

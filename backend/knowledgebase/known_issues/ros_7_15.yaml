@@ -1,0 +1,2 @@
+- CAPsMAN roaming instability in ax drivers
+- WiFi package memory leak under high DHCP lease rotation

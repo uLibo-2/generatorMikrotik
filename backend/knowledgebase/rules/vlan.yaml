@@ -1,0 +1,9 @@
+filtering:
+  best_practice:
+  - ingress-filtering=yes
+  - frame-types=admit-only-vlan-tagged для транків
+  description: Включає апаратну VLAN фільтрацію на мосту
+  requirements:
+  - наявність записів у таблиці /interface bridge vlan
+  risks:
+  - Втрата доступу до пристрою при помилках налаштування

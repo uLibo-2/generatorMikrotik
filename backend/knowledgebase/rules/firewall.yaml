@@ -1,0 +1,11 @@
+fasttrack:
+  best_practice: Вимкнути FastTrack за наявності QoS черг чи VPN тунелів
+  description: FastTrack прискорює обробку пакетів в обхід черг та фільтрів
+  incompatible:
+  - queue-tree
+  - ipsec
+  - traffic-flow
+  risks:
+  - Ігнорування черг Simple Queues та Queue Tree для прискореного трафіку
+  - Проблеми в роботі або втрата пакетів в тунелях IPsec
+  - Часткова втрата статистики NetFlow / Traffic Flow

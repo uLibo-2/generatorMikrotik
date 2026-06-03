@@ -1,0 +1,55 @@
+alternatives:
+- L009
+best_use_cases:
+- Budget home router
+- VPN Endpoint for small branch
+capabilities:
+  bgp: basic
+  capsman: basic
+  containers: none
+  ospf: basic
+  wireguard: basic
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 2000
+  containers_supported: false
+  evpn_supported: false
+  mpls_supported: true
+  ospf_area_limit: 3
+  vxlan_supported: false
+  wireguard_recommended_tunnels: 30
+hardware:
+  cores: 2
+  cpu: MT7621A
+  frequency: 880
+  ram_mb: 256
+  switch_chip: MT7621A
+known_issues:
+- No hardware support for encryption on RouterOS v7.18+ (software encryption slows
+  CPU)
+name: MikroTik hEX S (RBG760iGS)
+ports:
+  ethernet: 5
+  sfp: 1
+  sfp_plus: 0
+  two_5g: 0
+recommended_clients:
+  home: 50
+  hotspot: 30
+  office: 30
+recommended_versions:
+  lts: 6.49.10
+  stable: 7.12.1
+replacements:
+- hEX
+throughput:
+  firewall_gbps: 0.8
+  ipsec_gbps: 0.3
+  routing_gbps: 1.9
+  wireguard_mbps: 150
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false

@@ -1,0 +1,57 @@
+alternatives:
+- L009
+- CCR2004
+best_use_cases:
+- Core Router
+- Medium Office
+- Docker hosting
+capabilities:
+  bgp: excellent
+  capsman: excellent
+  containers: excellent
+  ospf: excellent
+  wireguard: excellent
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 50000
+  containers_supported: true
+  evpn_supported: true
+  mpls_supported: true
+  ospf_area_limit: 50
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 500
+hardware:
+  cores: 4
+  cpu: AL32400
+  frequency: 1400
+  ram_mb: 1024
+  switch_chip: 88E6393X
+known_issues:
+- SFP+ port link drops on select non-MikroTik transceivers
+- Port flapping with some 2.5G switches
+name: MikroTik RB5009UG+S+IN
+ports:
+  ethernet: 7
+  sfp: 0
+  sfp_plus: 1
+  two_5g: 1
+recommended_clients:
+  home: 300
+  hotspot: 200
+  office: 200
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- RB4011
+throughput:
+  firewall_gbps: 8.0
+  ipsec_gbps: 2.0
+  routing_gbps: 20.0
+  wireguard_mbps: 2500
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false

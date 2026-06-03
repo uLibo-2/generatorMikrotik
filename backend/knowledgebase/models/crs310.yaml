@@ -1,0 +1,54 @@
+alternatives:
+- CRS326
+best_use_cases:
+- 10G Fiber aggregation switch
+capabilities:
+  bgp: none
+  capsman: none
+  containers: none
+  ospf: basic
+  wireguard: none
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 100
+  containers_supported: false
+  evpn_supported: false
+  mpls_supported: false
+  ospf_area_limit: 1
+  vxlan_supported: false
+  wireguard_recommended_tunnels: 0
+hardware:
+  cores: 1
+  cpu: 98DX226S
+  frequency: 800
+  ram_mb: 512
+  switch_chip: 98DX226S
+known_issues:
+- Weak CPU
+- L3 HW Offload configurations are complex
+name: MikroTik CRS310-1G-8S+IN
+ports:
+  ethernet: 1
+  sfp: 0
+  sfp_plus: 8
+  two_5g: 0
+recommended_clients:
+  home: 100
+  hotspot: 100
+  office: 100
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- CRS112
+throughput:
+  firewall_gbps: 0.2
+  ipsec_gbps: 0.05
+  routing_gbps: 0.5
+  wireguard_mbps: 0
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false

@@ -1,0 +1,30 @@
+{
+  "disabled_services": [
+    "telnet",
+    "ftp",
+    "www",
+    "api",
+    "api-ssl"
+  ],
+  "enabled_services": [
+    "winbox",
+    "ssh"
+  ],
+  "winbox_port": 8291,
+  "ssh_port": 20522,
+  "winbox_allowed_addresses": "",
+  "ssh_allowed_addresses": "",
+  "ssh_strong_crypto": false,
+  "disable_ipv6": true,
+  "identity_prefix": "",
+  "identity_regex": "",
+  "identity_example": "",
+  "syslog_enabled": true,
+  "syslog_host": "10.16.250.111",
+  "syslog_port": 1514,
+  "syslog_topics": "!error,!warning,!info",
+  "ntp_primary": "",
+  "ntp_secondary": "",
+  "dns_servers": "",
+  "custom_rules": []
+}

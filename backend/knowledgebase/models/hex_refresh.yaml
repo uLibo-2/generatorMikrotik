@@ -1,0 +1,55 @@
+alternatives:
+- L009
+best_use_cases:
+- Home Core Router
+- Branch VPN Endpoint
+capabilities:
+  bgp: basic
+  capsman: good
+  containers: basic
+  ospf: good
+  wireguard: good
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 5000
+  containers_supported: true
+  evpn_supported: false
+  mpls_supported: true
+  ospf_area_limit: 8
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 80
+hardware:
+  cores: 2
+  cpu: EN7562CT
+  frequency: 950
+  ram_mb: 512
+  switch_chip: MT7531
+known_issues:
+- No SFP port unlike hEX S
+name: MikroTik hEX refresh (E50UG)
+ports:
+  ethernet: 5
+  sfp: 0
+  sfp_plus: 0
+  two_5g: 0
+recommended_clients:
+  home: 80
+  hotspot: 40
+  office: 40
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- hEX S
+- hEX
+throughput:
+  firewall_gbps: 1.2
+  ipsec_gbps: 0.45
+  routing_gbps: 2.5
+  wireguard_mbps: 350
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false

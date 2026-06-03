@@ -1,0 +1,5 @@
+description: Якщо параметр allow-remote-requests увімкнений, зовнішні запити до порту
+  53 (UDP/TCP) на інтерфейсах WAN повинні скидатися.
+name: DNS Amplification Protection (Захист від атак підсилення DNS)
+risk: Роутер буде використано зловмисниками для атак типу DDOS DNS Amplification,
+  що призведе до 100% завантаження CPU та каналу.

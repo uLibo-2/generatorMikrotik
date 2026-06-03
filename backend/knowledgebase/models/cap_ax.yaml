@@ -1,0 +1,55 @@
+alternatives:
+- wAP ax
+best_use_cases:
+- Access Point
+- Ceiling-mounted Wi-Fi AP
+capabilities:
+  bgp: basic
+  capsman: excellent
+  containers: good
+  ospf: basic
+  wireguard: good
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 2000
+  containers_supported: true
+  evpn_supported: false
+  mpls_supported: true
+  ospf_area_limit: 5
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 50
+hardware:
+  cores: 4
+  cpu: IPQ-6010
+  frequency: 1800
+  ram_mb: 1024
+  switch_chip: IPQ-6010
+known_issues:
+- No console port
+- Heats up significantly when serving 100+ active clients
+name: MikroTik cAP ax (CAPGi-5HaxD2HPaxD)
+ports:
+  ethernet: 2
+  sfp: 0
+  sfp_plus: 0
+  two_5g: 0
+recommended_clients:
+  home: 150
+  hotspot: 100
+  office: 120
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- cAP ac
+throughput:
+  firewall_gbps: 4.2
+  ipsec_gbps: 0.9
+  routing_gbps: 9.8
+  wireguard_mbps: 800
+wifi:
+  2g: true
+  5g: true
+  supported: true
+  wifi6: true
+  wifi7: false

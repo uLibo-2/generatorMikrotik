@@ -1,0 +1,2 @@
+- 'CAPsMAN roaming issue: client connection drops on FT transition'
+- 'WireGuard MTU bug: incorrect path MTU discovery when using FastPath'

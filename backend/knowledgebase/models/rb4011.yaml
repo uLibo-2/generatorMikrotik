@@ -1,0 +1,55 @@
+alternatives:
+- RB5009
+best_use_cases:
+- Core Router
+- Rackmount Office
+capabilities:
+  bgp: good
+  capsman: good
+  containers: basic
+  ospf: excellent
+  wireguard: excellent
+features:
+  bgp_full_table: false
+  bgp_recommended_routes: 20000
+  containers_supported: true
+  evpn_supported: true
+  mpls_supported: true
+  ospf_area_limit: 30
+  vxlan_supported: true
+  wireguard_recommended_tunnels: 300
+hardware:
+  cores: 4
+  cpu: AL21400
+  frequency: 1400
+  ram_mb: 1024
+  switch_chip: RTL8367SB
+known_issues:
+- No hardware offload for Bridge VLAN Filtering on v7 (uses software bridge)
+- SFP+ incompatibilities with some 1G SFP transceivers
+name: MikroTik RB4011iGS+RM
+ports:
+  ethernet: 10
+  sfp: 0
+  sfp_plus: 1
+  two_5g: 0
+recommended_clients:
+  home: 250
+  hotspot: 150
+  office: 150
+recommended_versions:
+  lts: 7.18.5
+  stable: 7.20.3
+replacements:
+- RB3011
+throughput:
+  firewall_gbps: 4.5
+  ipsec_gbps: 2.0
+  routing_gbps: 9.7
+  wireguard_mbps: 1200
+wifi:
+  2g: false
+  5g: false
+  supported: false
+  wifi6: false
+  wifi7: false
